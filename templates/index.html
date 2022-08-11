@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AOS Verifier</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/main.css') }}">
+  </head>
+  <body class="text-center">
+
+    <main class="form-signin w-100 m-auto">
+      <form method="POST" action="/verify">
+        <h1 class="h3 mb-3 fw-normal">Algorand Open Source Verifier</h1>
+        <p>Checks the claimed source code of an Algorand on-chain application.</p>
+        <div class="form-floating">
+          <input type="text" class="form-control" id="floatingInput" name="app_id">
+          <label for="floatingInput">Algorand Application ID</label>
+        </div>
+        <div class="form-floating">
+          <input type="url" class="form-control" id="floatingInput" name="github_url">
+          <label for="floatingInput">Contract's Github URL</label>
+        </div>
+
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Verify</button>
+        <p class="mt-5 mb-3 text-muted"><a href="https://algoexplorer.io/applications" target="_blank">list of Algorand applications</a></p>
+      </form>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
