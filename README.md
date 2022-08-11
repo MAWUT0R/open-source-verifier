@@ -1,5 +1,5 @@
 # open-source-verifier
-Algorand Opensource (AOS) Verifier is a tool that verifies the claimed source code of an Algorand on-chain application. It can be accessed at [https://aosverifier.de.r.appspot.com/](https://aosverifier.de.r.appspot.com/). To use the verification tool, you must provide the following:
+Algorand Opensource (AOS) Verifier is a tool that verifies the claimed source code of an Algorand on-chain application. It can be accessed temporarily at [https://aosverifier.de.r.appspot.com/](https://aosverifier.de.r.appspot.com/). To use the verification tool, you must provide the following:
 1. An Algorand application ID
 2. A public github url to an Algorand smart contract (Teal or Reach) file
 
@@ -10,7 +10,7 @@ AOS Verifier is built using the [flask framework](https://flask.palletsprojects.
 - Python3
 - [pip](https://pypi.org/project/pip/)
 
-## run flask app
+### run flask app
 ```bash
 git clone https://github.com/MAWUT0R/open-source-verifier.git
 cd open-source-verifier
